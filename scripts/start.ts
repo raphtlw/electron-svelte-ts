@@ -6,7 +6,7 @@ async function spawnRenderer() {
 
 async function spawnMain() {
   exec('tsc src/main.ts --outDir public/build', { async: false });
-  exec('electron-forge start');
+  exec('electron-forge start', { async: true });
 }
 
 spawnRenderer();
