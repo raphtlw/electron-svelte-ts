@@ -13,8 +13,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "executableName": "app",
-        "icon": "icon.png"
+        "executableName": "app"
       },
       "makers": [
         {
