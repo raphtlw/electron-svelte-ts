@@ -10,6 +10,9 @@
     "lint": "ts-node scripts/lint.ts",
     "format": "prettier --write ."
   },
+  "repository": "https://github.com/raphtlw/electron-svelte-ts",
+  "author": "raphtlw",
+  "license": "MIT",
   "config": {
     "forge": {
       "packagerConfig": {
