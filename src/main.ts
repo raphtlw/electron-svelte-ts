@@ -1,17 +1,31 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
-  // eslint-disable-line global-require
   app.quit();
 }
 
 const createWindow = (): void => {
+  // Cross platform solution for icons
+  // Use `npx electron-icon-maker --input=./icon.png --output=./public`
+  // to create the icons
+  let icon: string;
+  if (process.platform === 'linux') {
+    icon = path.join(app.getAppPath(), 'public', 'icons', 'png', '512x512.png');
+  } else if (process.platform === 'win32') {
+    icon = path.join(app.getAppPath(), 'public', 'icons', 'win', 'icon.ico');
+  } else if (process.platform === 'darwin') {
+    icon = path.join(app.getAppPath(), 'public', 'icons', 'mac', 'icon.icns');
+  }
+
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     height: 600,
     width: 800,
+    icon,
   });
 
   // and load the index.html of the app.

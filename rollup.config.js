@@ -10,7 +10,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 /** @type {import('rollup').RollupOptions} */
 const config = {
-  input: 'src/render.ts',
+  input: 'src/renderer.ts',
   output: {
     sourcemap: true,
     format: 'iife',
