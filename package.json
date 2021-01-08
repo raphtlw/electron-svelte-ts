@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "productName": "app",
+  "productName": "App",
   "version": "0.1.0",
   "description": "My Electron application description",
   "main": "public/build/main.js",
@@ -13,41 +13,13 @@
   "repository": "https://github.com/raphtlw/electron-svelte-ts",
   "author": "raphtlw",
   "license": "MIT",
-  "config": {
-    "forge": {
-      "packagerConfig": {
-        "executableName": "app"
-      },
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "app"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
-  },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",
     "@electron-forge/maker-deb": "^6.0.0-beta.54",
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
+    "@electron-forge/shared-types": "^6.0.0-beta.54",
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
     "@rollup/plugin-typescript": "^6.0.0",
