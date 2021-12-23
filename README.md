@@ -8,7 +8,7 @@
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```
-npx degit raphtlw/electron-svelte-ts app
+npx tiged raphtlw/electron-svelte-ts app
 ```
 
 ## Get started
