@@ -1,16 +1,7 @@
-const production = !process.env.ROLLUP_WATCH;
+// const PRODUCTION = !process.env.ROLLUP_WATCH;
 
 module.exports = {
-  // future: {
-  //   purgeLayersByDefault: true,
-  //   removeDeprecatedGapUtilities: true,
-  // },
-  // content: ['./src/**/*.svelte'],
-  purge: {
-    content: ['./src/**/*.svelte'],
-    enabled: production, // disable purge in dev
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/**/*.svelte'],
   theme: {
     fontFamily: {
       sans: [
