@@ -6,8 +6,8 @@ import * as fs from 'fs';
 import { ipcRenderer } from './ipc';
 
 const constants = {
-  BACKEND_URL: 'https://brewclient.vercel.app/api',
-  APP_FOLDER: 'brewclient',
+  BACKEND_URL: 'https://example.com/api',
+  APP_FOLDER: 'electron-svelte-ts',
 };
 const paths = {
   CACHE_PATH: path.join(
