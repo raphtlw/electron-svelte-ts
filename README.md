@@ -5,7 +5,9 @@
   </p>
 </p>
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+You can read more about this template [here](https://raphtlw.rocks/blog/why-i-made-an-electron-+-svelte-template).
+
+To create a new project based on this template using [tiged](https://github.com/tiged/tiged):
 
 ```
 npx tiged raphtlw/electron-svelte-ts app
