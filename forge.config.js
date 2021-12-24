@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 const path = require('path');
 
 const windowsIcon = path.join(__dirname, 'public', 'icons', 'win', 'icon.ico');

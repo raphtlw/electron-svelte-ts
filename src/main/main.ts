@@ -1,3 +1,4 @@
+/* eslint-disable no-empty */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 import { app, BrowserWindow } from 'electron';
@@ -27,6 +28,10 @@ const createWindow = (): void => {
     height: 600,
     width: 800,
     icon,
+    webPreferences: {
+      contextIsolation: true,
+      preload: path.join(__dirname, 'preload.js'),
+    },
   });
 
   // and load the index.html of the app.

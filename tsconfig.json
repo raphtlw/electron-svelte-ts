@@ -11,8 +11,7 @@
     "baseUrl": ".",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "paths": {
-      "*": ["node_modules/*"]
-    }
+    "noEmit": true,
+    "types": ["node", "svelte"]
   }
 }
